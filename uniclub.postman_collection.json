@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "1d7e17dd-3431-4158-9c8f-5028c0065ebb",
+		"name": "uniclub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22947797",
+		"_collection_link": "https://java08.postman.co/workspace/capstone_java_08~fcfeb4c7-c0ed-49f8-b184-ce3e166bbb24/collection/22947797-1d7e17dd-3431-4158-9c8f-5028c0065ebb?action=share&source=collection_link&creator=22947797"
+	},
+	"item": [
+		{
+			"name": "sign in",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email\n",
+							"value": "nguyenvana",
+							"type": "text"
+						},
+						{
+							"key": "password\n",
+							"value": "123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\":\"nguyenvanaaaa@gmail.com\",\n\"password\":\"123123\",\n\"fullname\":\"a\"\n\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
